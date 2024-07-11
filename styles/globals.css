@@ -10,6 +10,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Mulish:wght@200;300;400;500;600;700;800&display=swap");
 
 @import url('https://fonts.googleapis.com/css2?family=Tiro+Bangla:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
 html,
 body {
@@ -126,6 +127,7 @@ p {
   .h-bg-red {
     @apply animate-duration hover:bg-red-500 text-white;
   }
+  
 
   /* hide scrollbar  */
   /* Chrome, Safari and Opera */
@@ -143,6 +145,36 @@ p {
   .product-card {
     @apply flex flex-col justify-between items-start cursor-pointer p-2 sm:p-3 md:p-4 xl:p-5 rounded hover:card-shadow transition-all duration-500 relative border border-gray-100 hover:border-gray-200;
   }
+}
+
+.hind-siliguri-light {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.hind-siliguri-regular {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hind-siliguri-medium {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.hind-siliguri-semibold {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.hind-siliguri-bold {
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 /* date input mantain  */

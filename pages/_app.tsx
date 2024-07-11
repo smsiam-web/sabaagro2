@@ -1,4 +1,6 @@
 import "../styles/globals.css";
+import '@mantine/carousel/styles.css';
+import "react-image-gallery/styles/css/image-gallery.css";
 import type { AppProps } from "next/app";
 import Layout from "../app/layout";
 import { Provider } from "react-redux";
@@ -9,7 +11,7 @@ import { Notifications } from "@mantine/notifications";
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Provider store={store}>
-      <MantineProvider withNormalizeCSS withGlobalStyles>
+      <MantineProvider >
         <Layout>
           <Notifications position="top-right" autoClose={2000} />
           <Component {...pageProps} />
@@ -18,3 +20,4 @@ export default function App({ Component, pageProps }: AppProps) {
     </Provider>
   );
 }
+// withNormalizeCSS withGlobalStyles

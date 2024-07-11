@@ -10,7 +10,7 @@ const SuccessContent = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsTracking(true);
-    }, 3000);
+    }, 4000);
   }, []);
 
   return (
@@ -36,8 +36,9 @@ const SuccessContent = () => {
             alt=""
             className="mx-auto w-1/2 rounded-2xl"
           />
-          <h2 className="text-center text-lg mt-6 font-semibold">
-            Order successfully completed ㄟ(≧◇≦)ㄏ
+          <h2 className="text-center text-base mt-6 font-bold">
+            আপনার অর্ডারটি সফলভাবে গ্রহণ করা হয়েছে। কিছুক্ষণের মধ্যে আপনাকে ফোন
+            করা হবে।
           </h2>
           <h2 className="text-center text-base mt-2">
             Your order is on it&apos;s way 🏃
