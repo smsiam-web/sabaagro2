@@ -9,11 +9,11 @@ const Button = ({
   ...rest
 }) => {
   return (
-    <button className={`font-bold px-6 py-4 rounded ${className}`} {...rest}>
+    <button className={`sm:font-bold text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-4 rounded ${className}`} {...rest}>
       {loading ? (
         <Loader color="gray" size="sm" className="mx-auto" />
       ) : icon ? (
-        <div className="flex items-center justify-center gap-2">
+        <div className="flex items-center justify-center gap-1 sm:gap-2">
           {icon}
           {title}
         </div>

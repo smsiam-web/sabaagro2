@@ -5656,7 +5656,7 @@ strip-json-comments@^3.1.0, strip-json-comments@^3.1.1:
   resolved "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz"
   integrity sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
 
-styled-components@^6.1.2:
+styled-components@^6.1.1, styled-components@^6.1.2:
   version "6.1.11"
   resolved "https://registry.npmjs.org/styled-components/-/styled-components-6.1.11.tgz"
   integrity sha512-Ui0jXPzbp1phYij90h12ksljKGqF8ncGx+pjrNPsSPhbUUjWT2tD1FwGo2LF6USCnbrsIhNngDfodhxbegfEOA==
@@ -5677,6 +5677,13 @@ styled-jsx@5.1.1:
   integrity sha512-pW7uC1l4mBZ8ugbiZrcIsiIvVx1UmTfw7UkC3Um2tmfUq9Bhk8IiyEIPl6F8agHgjzku6j0xQEZbfA5uSgSaCw==
   dependencies:
     client-only "0.0.1"
+
+styled-react-modal@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.npmjs.org/styled-react-modal/-/styled-react-modal-3.1.1.tgz"
+  integrity sha512-H6Ga8dBMmIBYQ8s7ZLQbHzToMh7u52WMR65P1n7dmpgJSJs2oDdBipXhwoO518eJF92wTeyqH5tKO7S1p0y/yA==
+  dependencies:
+    prop-types "^15.8.1"
 
 stylis@4.2.0:
   version "4.2.0"

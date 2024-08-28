@@ -3,7 +3,7 @@ import { jsPDF } from "jspdf";
 import * as htmlToImage from "html-to-image";
 import Button from "../components/shared/Button";
 import { AiOutlinePrinter } from "react-icons/ai";
-import { BsCloudDownload } from "react-icons/bs";
+import { TbFileInvoice } from "react-icons/tb";
 
 const GeneratePdf = ({ html, disabled, item, id }) => {
   const generate = (e) => {
@@ -228,8 +228,9 @@ const GeneratePdf = ({ html, disabled, item, id }) => {
         <div className="">
           <div className="col-span-2 sm:col-span-1">
             <Button
+              icon={<TbFileInvoice />}
               onClick={generateImage}
-              title="Download Invoice"
+              title="Invoice"
               className="bg-primary font-medium hover:bg-green-900 hover:shadow-lg transition-all duration-300 text-white"
             />
           </div>
