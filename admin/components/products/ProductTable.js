@@ -3,8 +3,7 @@ import React, { useEffect } from "react";
 import { TbListDetails } from "react-icons/tb";
 import { useState } from "react";
 import { Switch, Group, useMantineTheme, Modal } from "@mantine/core";
-import { RxCross2 } from "react-icons/rx";
-import { CgCheck } from "react-icons/cg";
+import { IconCheck, IconX } from "@tabler/icons-react";
 import { FiEdit } from "react-icons/fi";
 import { RiDeleteBinLine } from "react-icons/ri";
 import Link from "next/link";
@@ -257,23 +256,21 @@ const ProductTable = ({ onClick }) => {
                                 size="sm"
                                 thumbIcon={
                                   item.isPublished ? (
-                                    <CgCheck
-                                      size="0.8rem"
-                                      color={
-                                        theme.colors.teal[
-                                          theme.fn.primaryShade()
-                                        ]
-                                      }
+                                    <IconCheck
+                                      style={{
+                                        width: 12,
+                                        height: 12,
+                                      }}
+                                      color={theme.colors.teal[6]}
                                       stroke={3}
                                     />
                                   ) : (
-                                    <RxCross2
-                                      size="0.8rem"
-                                      color={
-                                        theme.colors.red[
-                                          theme.fn.primaryShade()
-                                        ]
-                                      }
+                                    <IconX
+                                      style={{
+                                        width: 12,
+                                        height: 12,
+                                      }}
+                                      color={theme.colors.red[6]}
                                       stroke={3}
                                     />
                                   )
