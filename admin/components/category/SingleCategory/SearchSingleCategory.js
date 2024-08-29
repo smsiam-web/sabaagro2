@@ -86,9 +86,9 @@ const SearchSingleCategory = ({ item }) => {
             <div className="w-full md:w-56 lg:w-56 xl:w-56">
               <Button
                 onClick={open}
-                title="Add Single Category"
-                className="bg-blue-400 hover:bg-blue-500 hover:shadow-lg transition-all duration-300 text-white w-full h-14"
-                icon=<BiPlus size={24} />
+                title="Child"
+                className="bg-blue-400 hover:bg-blue-500 hover:shadow-lg transition-all duration-300 text-white w-full"
+                icon=<BiPlus size={22} />
               />
             </div>
           </div>

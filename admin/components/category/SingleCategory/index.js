@@ -296,17 +296,13 @@ const SingleCAtegory = () => {
                                 i.isPublished ? (
                                   <CgCheck
                                     size="0.8rem"
-                                    color={
-                                      theme.colors.teal[theme.fn.primaryShade()]
-                                    }
+                                    color={theme.colors.red[6]}
                                     stroke={3}
                                   />
                                 ) : (
                                   <RxCross2
                                     size="0.8rem"
-                                    color={
-                                      theme.colors.red[theme.fn.primaryShade()]
-                                    }
+                                    color={theme.colors.red[6]}
                                     stroke={3}
                                   />
                                 )
