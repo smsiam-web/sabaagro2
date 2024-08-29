@@ -162,9 +162,6 @@ const OrderDetails = ({ onClick }) => {
                       <tr>
                         <th className="px-2 sm:px-4 sm:py-1">SL</th>
                         <th className="px-2 sm:px-4 sm:py-1">Item</th>
-                        <th className="px-2 sm:px-4 sm:py-1 capitalize">
-                          Cate
-                        </th>
                         <th className="px-2 sm:px-4 sm:py-1">QTY</th>
                         <th className="px-2 sm:px-4 sm:py-1">Price</th>
                         <th className="px-2 sm:px-4 sm:py-1">Total</th>
@@ -190,13 +187,6 @@ const OrderDetails = ({ onClick }) => {
                                   {item.product_name}
                                 </span>
                               </td>
-
-                              <td className="px-2 sm:px-4 sm:py-1 font-medium">
-                                <span className="text-[10px] sm:text-sm">
-                                  {item.child_category}
-                                </span>
-                              </td>
-
                               <td className="px-2 sm:px-4 sm:py-1">
                                 <span className="text-[10px] sm:text-sm font-semibold">
                                   {item.quantity}
