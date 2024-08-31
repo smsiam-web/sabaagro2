@@ -34,12 +34,14 @@ const ExportCSV = () => {
                 Name: doc?.data()?.customer_details.customer_name,
                 Address: doc?.data()?.customer_details.customer_address,
                 Phone: doc?.data()?.customer_details.phone_number,
+                QTY: doc?.data()?.quantity,
                 Amount: doc?.data()?.customer_details.salePrice,
-                Weight: doc?.data()?.weight,
+                Courier: doc?.data()?.customer_details.courier,
+                Status: doc?.data()?.status,
                 Note: `${doc?.data()?.customer_details.note} ${
                   doc?.data()?.customer_details.delivery_type
-                    ? "(Home Delivery)"
-                    : "(Point Delivery)"
+                    ? "(Point)"
+                    : "(Home)"
                 }`,
               });
           });
@@ -65,7 +67,7 @@ const ExportCSV = () => {
               message: `(•_•)There was no data for download... !!`,
               color: "red",
             });
-            setValue(0)
+            setValue(0);
           }
         });
     }
